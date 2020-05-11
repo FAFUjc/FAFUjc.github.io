@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<script type="text/javascript">
+function setWindowSize(){ //iframe自动本窗口高度
+try{
+var thiswin = window.parent.document.getElementById(window.name);
+if(window.document.body.scrollWidth-thiswin.offsetWidth>6){
+document.body.style.overflowX="auto";
+thiswin.height=window.document.body.scrollHeight+20;
+thiswin.width=window.document.body.scrollWidth+20;
+}else{
+document.body.style.overflowX="hidden";
+thiswin.height=window.document.body.scrollHeight;
+thiswin.width=window.document.body.scrollWidth
+}
+}catch(e){ } 
+}
+</script>
+</head>
+<body onLoad="setWindowSize()" background="background1.jpg"
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;">
+    <h4 id="headline" class="large" style="color: black">范仲淹立身孤高，报国奉行“以言为先”，因此他谏言无忌，以至危言多犯，屡言屡贬，乃至在连续三次遭到被贬后，喊出了一句“宁鸣而死，不默而生”的千古名言。</h4>
+     
+
+</body>
+</html>
